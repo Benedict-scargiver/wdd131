@@ -3,22 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benedict Nwanze WDD 131</title>
-    <link rel="stylesheet" href="style/layout.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Benedict Nwanze</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Benedict Nwanze">
+    <meta name="author" content="Benedict Nwanze"> 
+    <script src="scripts/getdates.js" defer></script> 
+    <link rel="stylesheet" href="styles/layout.css">
 </head>
 <body>
     <header>
-        <h1 contenteditable>Header</h1>
+        <h1>WDD 131: Dynamic Web Fundamentals - Benedict Nwanze</h1>
         <nav class="navigation modern">
-            <a href="#" title="Home">Home</a>
-            <a href="#" title="Project">Project</a>
-            <a href="#" title="Services">Services</a>
-            <a href="#" title="Contact Us">Contact Us</a>
+            <nav class="navigation modern">
+                <a href="https://www.linkedin.com/in/benedict-nwanze-1aaa561a0/" title="LinkedIn">LinkedIn</a>
+                <a href="https://byui.instructure.com/." title="I-Learn">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=eng&id=p26#p26" title="Scripture">Scripture</a>
+                <a href="#" title="Final Project">Final Project</a>
+            </nav>
         </nav>
       </header>
-      <div class="left-sidebar" contenteditable>Left Sidebar</div>
-      <main contenteditable></main>
-      <div class="right-sidebar" contenteditable>Right Sidebar</div>
-      <footer contenteditable>Footer Content</footer>
+      <main>
+      <div class="left-sidebar">
+        <h2>About Me</h2>
+        <img src="images/personal.jpg" alt="Benedict Nwanze" width="150" class="img-right ">
+        <p>My name is Benedict Nwanze, and I'm a web developer based in Lagos, Nigeria. I come from a family of four, with one elder brothers and a loving mother and father. In my free time, I enjoy exploring the natural beauty of Lagos, reading books, and learning new web development techniques.</p>  
+        <h3>Lagos state, Nigeria</h3>
+        <img src="images/lagosstate.jpeg" alt="Lagos, Nigeria" width="200" class="img-left">
+        <p>
+          Lagos State is a state in southwestern Nigeria. Of the 36 Nigerian states, it is the second most populous state but the smallest in area. Nigeria, officially the Federal Republic of Nigeria, is a country in West Africa. It is situated between the Sahel to the north and the Gulf of Guinea to the south in the Atlantic Ocean. It covers an area of 923,769 square kilometres (356,669 sq mi). With a population of more than 230 million, it is the most populous country in Africa, and the world's sixth-most populous country.
+        </p>
+      </div>
+      </main>
+      <div class="right-sidebar">
+        <h2>Web Dev Resources</h2>  
+        <ul>  
+          <li><a href="https://dev.to/">Dev.to Community</a></li>  
+          <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>  
+          <li><a href="https://css-tricks.com/">CSS Tricks</a></li> 
+          <li><a href="https://www.w3schools.com/">w3school</a></li>  
+          <li><a href="https://www.udemy.com/">Udemy</a></li>  
+        </ul>  
+        </nav>
+      </div>
+      <footer><p>&copy; <span id="currentyear"></span> Benedict, Lagos State, Nigeria.</p>  
+        <p id="lastModified"></p> </footer>
 </body>
 </html>
