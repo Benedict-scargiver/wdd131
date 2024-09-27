@@ -1,3 +1,4 @@
+
 body {
   display: grid;
   height: 100vh;
@@ -28,7 +29,7 @@ flex: 1 1 100%;
 align-items: center;
 }
 .navigation li {
-flex: 1 1 auto; /* difference between auto and 100% flex-basis - turn on link borders to view */
+flex: 1 1 auto; 
 }
 .navigation a {
 display: block;
@@ -37,7 +38,6 @@ padding: 0.75rem;
 background-color: #000000;
 text-decoration: none;
 text-align: center;
-/* 	border: 1px dotted cyan; */
 }
 .navigation a:hover {
 font-weight: 700;
@@ -45,120 +45,6 @@ text-decoration: underline;
 text-decoration-color: rgb(209, 209, 199);
 }
 
-.wrap {
-  flex-wrap: wrap;
-}
-
-p {
-text-align: match-parent;
-font-size: medium;
-}
-
-.left-sidebar {
-  background: rgb(249, 249, 249);
-  grid-column: 1 / 2;
-}
-
-main {
-  background: rgb(252, 253, 253);
-  grid-column: 1 / 3;
-}
-
-.right-sidebar {
-  background: rgb(231, 233, 236);
-  grid-column: 3 / 4;
-}
-
-footer {
-  background: rgb(10, 67, 133);
-  padding: 2rem;
-  text-align: match-parent;
-  grid-column: 1 / 4;
-}
-
-
-
-
-.left-sidebar,
-.right-sidebar {
-  padding: 1rem;
-}
-
-h1 {
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 20px;
-  color: white;
-}
-h2 {
-  font-size: 1.2rem;
-  font-family: Roboto, Arial, sans-serif;
-  padding: 0.5rem;
-  text-align: center;
-  /* margin: 0.5rem auto; */
-  margin: auto;
-  background-color: #08458a;
-  color: white;
-  border-top-left-radius: 8px 8px;
-  border-top-right-radius: 8px 8px;
-}
-h3 {
-font-size: 1.2rem;
-text-align: center;
-padding: 0px;
-color: black;
-margin: 3rem 1rem 1rem 1rem;
-}
-body {
-  display: grid;
-  height: 100vh;
-  grid-template: auto 1fr auto / 300px 1fr auto;
-}
-header {
-  padding: 0px;
-  background-color: rgb(10, 67, 133);
-}
-header {
-  background: rgb(10, 67, 133);
-  padding: rem;
-  grid-column: 1 / 4;
-}
-nav {
-margin: 0 auto 2rem;
-max-width: 90vw;
-}
-
-.modern a {
-flex: 1 1 100%;
-}
-
-.navigation {
-list-style: none;
-display: flex;
-flex: 1 1 100%;
-align-items: center;
-}
-.navigation li {
-flex: 1 1 auto; /* difference between auto and 100% flex-basis - turn on link borders to view */
-}
-.navigation a {
-display: block;
-color: #eee;
-padding: 0.75rem;
-background-color: #000000;
-text-decoration: none;
-text-align: center;
-/* 	border: 1px dotted cyan; */
-}
-.navigation a:hover {
-font-weight: 700;
-text-decoration: underline;
-text-decoration-color: rgb(209, 209, 199);
-}
-
-.wrap {
-  flex-wrap: wrap;
-}
 
 p {
 text-align: start;
@@ -200,19 +86,16 @@ main {
   grid-column: 3 / 4;
 }
 
+.left-sidebar,
+.right-sidebar {
+  padding: 1rem;
+}
+
 footer {
   background: rgb(10, 67, 133);
   padding: 1%;
   text-align: center;
   grid-column: 1 / 4;
-}
-
-
-
-
-.left-sidebar,
-.right-sidebar {
-  padding: 1rem;
 }
 
 h1 {
@@ -226,7 +109,6 @@ h2 {
   font-family: Roboto, Arial, sans-serif;
   padding: 0.5rem;
   text-align: center;
-  /* margin: 0.5rem auto; */
   margin: auto;
   background-color: #08458a;
   color: white;
