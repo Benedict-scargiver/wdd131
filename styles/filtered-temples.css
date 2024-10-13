@@ -1,0 +1,145 @@
+:root {
+    --green: rgb(72, 97, 34);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Urbanist", system-ui;
+    min-height: 100vh;
+}
+
+header {
+    background-color: hsl(238, 62%, 46%);
+    color: white;
+}
+
+header>h1 {
+    display: flex;
+    padding: 2rem;
+}
+
+nav {
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav>a {
+    color: white;
+    text-decoration-line: none;
+    padding: 1rem;
+}
+
+nav>a:hover {
+    background-color:#999da482;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+main {
+    flex: 1;
+    justify-content: center;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+    place-items: center;
+}
+
+footer {
+    color: #fff;
+    background-color:hsl(238, 62%, 46%);
+    padding: 2rem;
+    text-align: center;
+}
+
+footer p {
+    font-weight: 500;
+}
+
+
+/* add ons */
+.title-font {
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.home {
+    margin-bottom: 2rem;
+}
+
+.d-none {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+/* button */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 2.4rem;
+    right: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+/* card */
+.card {
+    background-color: #fff;
+    border: rgba(209, 209, 209, 0.76) 0.5px solid;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card>h3 {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.card>img {
+    width: 100%;
+    min-height: auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 1rem 0 0 0;
+}
+
+.card>p {
+    flex-grow: 1;
+}
+
+.card>span {
+    font-weight: bold;
+}
