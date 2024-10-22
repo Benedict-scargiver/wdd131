@@ -1,0 +1,25 @@
+
+
+.image-container img {  
+width:100%; /* Make the image responsive */  
+height: auto; /* Maintain aspect ratio */  
+}  
+
+.overlay {  
+position: absolute;  
+top:0;  
+left:0;  
+right:0;  
+bottom:0;  
+display: flex; /* Center the text */  
+justify-content: center; /* Center horizontally */  
+align-items: center; /* Center vertically */  
+background-color: rgba(0,0,0,0.5); /* Semi-transparent background */  
+color: white; /* Text color */  
+opacity:0; /* Start as invisible */  
+transition: opacity0.3s; /* Smooth transition */  
+}  
+
+.image-container:hover .overlay {  
+opacity:1; /* Show the overlay on hover */  
+}
