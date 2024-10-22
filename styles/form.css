@@ -238,7 +238,12 @@ textarea {
 
 h1, footer, input[type="submit"] {
     background-color: var(--darkblue);
-    color: var(--white);
+    color: var(--white)
+
+}
+
+input[type="submit"] {
+    background-color: rgb(71, 181, 255)
 }
 
 input[type="submit"] {
@@ -260,7 +265,7 @@ input[type="submit"]:active {
 }
 
 .smaller {
-    color: var(--darkblue);
+    color: rgb(71, 181, 255);
     font-size: 0.875rem;
 }
 
