@@ -1,8 +1,8 @@
 
 
 .image-container img {  
-width:100%; /* Make the image responsive */  
-height: auto; /* Maintain aspect ratio */  
+width:10%; /* Make the image responsive */  
+height: 10%; /* Maintain aspect ratio */  
 }  
 
 .overlay {  
