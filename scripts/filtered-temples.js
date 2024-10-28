@@ -67,7 +67,7 @@ const temples = [
         templeName: "Laie Hawaii",
         location: "Laie, Hawaii",
         dedicated: "1919, November, 27",
-        area: "42100",
+        area: 42100,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/laie-hawaii/800x500/laie-temple-775368-wallpaper.jpg"
     },
     {

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals Filtered Temple Picture Album- Benedict Nwanze</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Benedict Nwanze">
+    <meta name="author" content="Benedict Nwanze"> 
+    <link rel="stylesheet" href="styles/projecthome.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <h1>The Game Store</h1>
+    </a>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact</h2>
+
+    <div class="contact">
+      <form method="get" action="feedback.html">
+        <!-- Your Name -->
+        <div class="name-container">
+          <label for="yourname">Your Name <span>*</span> <input type="text" name="yourname" id="yourname"
+              required></label>
+        </div>
+
+        <!-- Your Email -->
+        <div class="email-container">
+          <label for="email">Your Email <span>*</span> <input type="email" name="email" id="email" required></label>
+        </div>
+
+        <!-- Message -->
+        <div class="message-container">
+          <label for="message">Message <textarea name="message" id="message"
+              placeholder="Write your message..."></textarea></label>
+        </div>
+
+        <input type="submit" value="Send Message">
+      </form>
+
+      <div class="address">
+        <address>
+          <p>10 Rockefeller Plaza, New York, NY</p>
+          <p>10020, United States</p>
+        </address>
+        <iframe
+          src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.0087577508117!2d3.3685103397380276!3d6.517250083201866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c4e2811755b%3A0x13b71bfc60928465!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e0!3m2!1sen!2sng!4v1730136353394!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        </iframe>
+      </div>
+    </div>
+
+  </main>
+  <footer><p>&copy; <span id="currentyear"></span> 💒Benedict, Lagos State, Nigeria.  💒 </p>  
+    <p id="lastModified"></p> </footer>
+</body>
+</html>
