@@ -1,0 +1,60 @@
+header {
+    background-color: rgb(37, 109, 133);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    color:white ;
+    padding: 1.5rem;
+}
+
+body{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(245, 247, 248);
+}
+
+
+h4{
+    background-color: rgb(71, 181, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.image-box {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    border-radius: 15px;
+    border: 2cap;
+    overflow: hidden;
+}
+
+.card1{
+    background-color: rgb(223, 246, 255);
+}
+
+
+.card4{
+    background-color: rgb(6, 40, 61);
+}
+.card4 p{
+    color: aliceblue;
+}
+
+.card {
+    flex: 1;
+    height: 100%;
+    transition: flex 0.5s ease;
+    cursor: pointer;
+}
+.card:hover{
+    flex: 3;
+}
+
+footer {
+    background-color: rgb(37, 109, 133);
+    text-align: center;
+    font-family:serif;
+    color:white ;
+    padding: 1.5rem;
+
+}

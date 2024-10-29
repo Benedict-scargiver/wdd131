@@ -103,18 +103,7 @@ const suit = [
         about:" Brown suits pair well with a wide range of shirt and tie combinations, allowing for creative styling. ",
         suitName: "Brown Gentleman Suit"
     },
-    {
-        colorCode: "brown",
-        imageUrl: "images/flexsuit2.jpg",
-        about:"Brown suit enduring popularity, means it remains stylish across different trends and seasons.",
-        suitName: "Brown Gentleman Suit"
-    },
-    {
-        colorCode: "brown",
-        imageUrl: "images/flexsuit3.jpg",
-        about:"Brown Suit versatility allows them to be suitable for both formal and casual occasions.",
-        suitName: "Brown Gentleman Suit"
-    },
+
     {
         colorCode: "other",
         imageUrl: "images/greensuit3.jpg",
