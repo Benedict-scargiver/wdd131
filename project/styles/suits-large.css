@@ -1,0 +1,74 @@
+@media screen and (min-width: 740px) {
+    .menu {
+        display: none;
+    }
+
+    header {
+        background-color:rgb(6, 40, 61);
+        color: white;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    header>h1 {
+        padding: 0;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, minmax(200px, 2fr));
+    }
+
+    .card {
+        min-height: 400px;
+    }
+
+    .image-box {
+        display: flex;
+        width: 600px;
+        height: 300px;
+        border-radius: 15px;
+        border: 2cap;
+        overflow: hidden;
+    }
+
+    
+    .card1{
+        background-color: rgb(223, 246, 255);
+    }
+    
+    .card2{
+        background-color: rgb(71, 181, 255);
+    }
+    
+    .card3{
+        background-color: rgb(37, 109, 133);
+    }
+    
+    .card4{
+        background-color: rgb(6, 40, 61);
+    }
+    .card4 p{
+        color: aliceblue;
+    }
+    
+    .card {
+        height: 100%;
+        transition: flex 0.5s ease;
+        cursor: pointer;
+    }
+    .card:hover{
+        flex: 3;
+    }
+
+
+}

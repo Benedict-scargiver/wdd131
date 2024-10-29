@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals Filtered Temple Picture Album- Benedict Nwanze</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Benedict Nwanze">
+    <meta name="author" content="Benedict Nwanze"> 
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/poj.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="title-font">BENECO</h1>
+        <button type="button" id="menu" aria-label="hamburger-menu"></button>
+        <!-- Hidden on mobile -->
+        <nav id="navMenu">
+
+            <a href="suits.html">Gentlemen Suites</a>
+            <a href="items.html">Items and Accessories</a>
+        </nav>
+    </header>
+    <main>
+        <h2>About</h2>
+    
+        <div class="about">
+          <picture class="image1">
+            <source srcset="images/beneco.jpg" media="(min-width: 720px)">
+            <img src="images/beneco.jpg" alt="Beneco" loading="lazy">
+          </picture>
+          <div class="description1">
+            <p><strong>BENECO</strong> is a distinguished gentlemen’s fashion brand that epitomizes the synergy of timeless elegance and contemporary style.
+                 Established with the vision of catering to the modern man, BENECO offers a curated selection of apparel that transcends seasonal 
+                 trends while maintaining a steadfast commitment to quality and craftsmanship. t the heart of BENECO’s philosophy is the belief that clothing is not merely a means of covering the body, 
+                 but rather a powerful medium of self-expression.</p>
+          </div>
+          <picture class="image2">
+            <source srcset="images/accessory1.jpg" media="(min-width: 720px)">
+            <img src="images/accessory1.jpg" alt="The Kit" loading="lazy">
+          </picture>
+          <div class="description2">
+            <p>Accessories play a critical role in defining a man's style, and Beneco offers an impressive range of options. 
+              Leather belts, meticulously crafted in various textures and colors, provide the perfect finishing touch to any outfit. 
+              Their selection of ties and bow ties enhances formal attire, featuring patterns and fabrics that cater to both classic
+               and modern tastes.
+
+              Footwear Essentials
+              
+              Footwear is another standout aspect of Beneco's offerings. From dress shoes that complement formal looks to
+               stylish sneakers that cater to a more laid-back vibe, the collection is designed for comfort and durability.
+                Each pair reflects a commitment to craftsmanship, ensuring that style does not come at the expense of
+                 practicality.</p>
+          </div>
+        </div>
+    
+      </main>
+    
+      <footer>
+        <footer><p>&copy; <span id="currentyear"></span> 💒Benedict Nwanze, Lagos State, Nigeria.  💒 </p>  
+          <p id="lastModified"></p> </footer>
+      </footer>
+    </body>

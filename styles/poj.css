@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: max-content 1fr max-content;
+    justify-items: center;
+    gap: 12px;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    text-rendering: geometricprecision;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(223, 246, 255);
+  }
+  
+  header,
+  main,
+  footer {
+    padding: 2em;
+  }
+  
+  nav {
+    display: block;
+    padding: 1rem;
+}
+
+nav>a{
+    display: flex;
+    padding: 1rem;
+    color: #fff;
+}
+
+nav:hover{
+    counter-reset: #fff ;
+}
+  
+  #menu {
+	font-size: 1.5rem;
+    font-weight:700;
+    background: none;
+    border: 0;
+    color: #ffffff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+	content: "≡";
+}
+  
+  
+  .navigation {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .navigation a {
+    font-size: 1em;
+    font-weight: 800;
+    text-align: center;
+    flex: 1 1 auto;
+    padding: 6px 12px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+#menu.show::before {
+	content: "X";
+}
+
+header,
+footer {
+    grid-column: 1 / 4;
+    width: 100%;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2em;
+    background-color: rgb(6, 40, 61);
+    color: white;
+  }
+  
+  h1 {
+    margin: 0;
+    font-weight: 900;
+  }
+  
+  main {
+    width: 100%;
+    max-width: 1200px;
+    grid-column: 2;
+  }
+  
+  
+  footer {
+    color: #fff;
+    background-color:rgb(6, 40, 61);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer p {
+    font-weight: 500;
+  }
+
+  @media screen and (max-width: 720px) {
+
+    nav {
+        display: block;
+        padding: 1rem;
+    }
+    
+    .navigation.filters {
+      display: flex;
+      gap: 4px;
+      width: 100%;
+      max-width: unset;
+    }
+  
+    .navigation.filters a {
+      padding: 2px 4px;
+    }
+  
+    .navigation.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: #ffe3da;
+      padding: 1em;
+      box-sizing: border-box;
+      left: 0;
+      top: 74px;
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 1.6em;
+    }
+  }
+  
+  @media screen and (max-width: 560px) {
+    .game-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
